@@ -21,7 +21,7 @@ http_config = HttpConfig()
 http_url = HttpURL(host="slack.com/api/",protocol=HTTPS)
 """HttpURL : takes the hostname, protocol."""
 headers = HttpHeaders({
-    "Authorization" : "Bearer xoxp-2866334873382-2873046169155-2925981877831-8d152cd4d5cd8c2310a3b4aa2b3336f1"
+    "Authorization" : "Bearer token"
 })
 """passing token for accessing the endpoint."""
 http_request = HttpRequest(headers=headers, url=http_url, auth_type=BEARER_TOKEN,config = http_config)
